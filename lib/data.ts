@@ -68,7 +68,7 @@ export type FloorRoom = {
   seats?: number;
   cabin?: boolean;
   tag?: string;
-  floor: "ground" | "second";
+  floor: "ground" | "first";
   zone?: string;
 };
 
@@ -121,24 +121,24 @@ export const FLOOR_ROOMS: FloorRoom[] = [
     name: "Women's Restroom",
     tag: "Spacious and hygienic restroom with all necessary amenities.",
   },
-  // ========== SECOND FLOOR ==========
+  // ========== FIRST FLOOR ==========
   {
     id: "s-front-8",
-    floor: "second",
+    floor: "first",
     name: "Front Room A",
     seats: 8,
     tag: "Bright, front‑facing room with 8 seats – ideal for a small team.",
   },
   {
     id: "s-front-7",
-    floor: "second",
+    floor: "first",
     name: "Front Room B",
     seats: 7,
     tag: "Adjacent front room with 7 seats, separated by a partition wall.",
   },
   {
     id: "s-center-main",
-    floor: "second",
+    floor: "first",
     name: "14 Seater + Private Cabin",
     seats: 14,
     cabin: true,
@@ -146,7 +146,7 @@ export const FLOOR_ROOMS: FloorRoom[] = [
   },
   {
     id: "s-center-cabin",
-    floor: "second",
+    floor: "first",
     name: "Private Cabin (Inside)",
     seats: 1,
     cabin: true,
@@ -154,14 +154,14 @@ export const FLOOR_ROOMS: FloorRoom[] = [
   },
   {
     id: "s-rear-10a",
-    floor: "second",
+    floor: "first",
     name: "Rear Room A",
     seats: 10,
     tag: "Quiet rear room with 10 seats, perfect for focused work.",
   },
   {
     id: "s-rear-10b",
-    floor: "second",
+    floor: "first",
     name: "Rear Room B",
     seats: 10,
     tag: "Second rear room with 10 seats, separated by a partition wall.",
@@ -180,11 +180,11 @@ export type SpaceCard = {
 
 export const SPACES: SpaceCard[] = [
   { id: "sp-1", title: "14 Seats + Private Cabin", seats: 14, cabin: true, floor: "Ground Floor", zone: "Main Workspace" },
-  { id: "sp-2", title: "14 Seats + Private Cabin", seats: 14, cabin: true, floor: "2nd Floor", zone: "Center Room" },
-  { id: "sp-3", title: "10 Seats", seats: 10, floor: "2nd Floor", zone: "Rear Room A" },
-  { id: "sp-4", title: "10 Seats", seats: 10, floor: "2nd Floor", zone: "Rear Room B" },
-  { id: "sp-5", title: "7 Seats", seats: 7, floor: "2nd Floor", zone: "Front Room B" },
-  { id: "sp-6", title: "8 Seats", seats: 8, floor: "2nd Floor", zone: "Front Room A" },
+  { id: "sp-2", title: "14 Seats + Private Cabin", seats: 14, cabin: true, floor: "First Floor", zone: "Center Room" },
+  { id: "sp-3", title: "10 Seats", seats: 10, floor: "First Floor", zone: "Rear Room A" },
+  { id: "sp-4", title: "10 Seats", seats: 10, floor: "First Floor", zone: "Rear Room B" },
+  { id: "sp-5", title: "7 Seats", seats: 7, floor: "First Floor", zone: "Front Room B" },
+  { id: "sp-6", title: "8 Seats", seats: 8, floor: "First Floor", zone: "Front Room A" },
 ];
 
 export const AMENITIES = [
@@ -234,10 +234,10 @@ export const HOW_IT_WORKS = [
 
 export const ENQUIRY_WORKSPACE_OPTIONS = [
   "14 Seats + Private Cabin (Ground Floor)",
-  "14 Seats + Private Cabin (2nd Floor, Center Room)",
-  "10 Seats (2nd Floor, Rear Room)",
-  "8 Seats (2nd Floor, Front Room)",
-  "7 Seats (2nd Floor, Front Room)",
+  "14 Seats + Private Cabin (First Floor, Center Room)",
+  "10 Seats (First Floor, Rear Room)",
+  "8 Seats (First Floor, Front Room)",
+  "7 Seats (First Floor, Front Room)",
   "Virtual Office",
   "Not sure yet",
 ];

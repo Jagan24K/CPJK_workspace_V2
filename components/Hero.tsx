@@ -150,7 +150,7 @@ export function Hero() {
               transition={{ duration: 0.7, delay: 1.3, ease }}
               className="absolute -right-4 bottom-16 rounded-2xl border border-gold-hair/40 bg-ink/80 px-4 py-3 shadow-card backdrop-blur-md sm:-right-8"
             >
-              <p className="font-display text-xl text-gold-bright">2nd Floor</p>
+              <p className="font-display text-xl text-gold-bright">First Floor</p>
               <p className="text-[11px] text-stone">Front · Center · Rear rooms</p>
             </motion.div>
           </motion.div>
